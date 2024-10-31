@@ -1,4 +1,4 @@
-with open("input.txt") as f:
+with open("test.txt") as f:
     content = f.read()
     code, mappings = content.split("\n\n")
     template = {}
@@ -9,9 +9,9 @@ with open("input.txt") as f:
         template[input.strip()] = output.strip()
         alphabet.add(output.strip())
     
-    # print(alphabet)
+    print(alphabet)
     # exit()    
-    itrs = 40
+    itrs = 10
 
     while itrs > 0:
         print(itrs)
@@ -36,6 +36,6 @@ with open("input.txt") as f:
                 counts[c] += 1
         
         print(counts, len(counts.values()))
-    # mx = max([x for x in counts.values()])
-    # mn = min([x for x in counts.values()])
-    # print(mx-mn)
+    mx = max([x for x in counts.values()])
+    mn = min([x for x in counts.values()])
+    print(mx-mn)
