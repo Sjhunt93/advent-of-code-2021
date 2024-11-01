@@ -5,7 +5,7 @@
 #         puts "xx"
 # }
 
-lines = File.readlines("sub2.txt")
+lines = File.readlines("input.dat")
 #puts lines
 pos_x = 0
 depth = 0

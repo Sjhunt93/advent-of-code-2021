@@ -10,10 +10,7 @@ itrs = 80
 for i in 1..itrs
     print(i, "\n")
     fish_to_add = Array.new
-    for f in 0..fish_pool.length()-1
-    
-
-        
+    for f in 0..fish_pool.length()-1        
         fish_pool[f] -= 1
         
         if fish_pool[f] < 0

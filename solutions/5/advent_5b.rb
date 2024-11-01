@@ -1,4 +1,4 @@
-lines = File.readlines("lines.txt")
+lines = File.readlines("input.dat")
 
 GRID = 1000
 

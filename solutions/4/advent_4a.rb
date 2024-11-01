@@ -1,14 +1,10 @@
-bingo = [91,17,64,45,8,13,47,19,52,68,63,76,82,44,28,56,37,2,78,48,32,58,72,53,9,85,77,89,36,22,49,86,51,99,6,92,80,87,7,25,31,66,84,4,98,67,46,61,59,79,0,3,38,27,23,95,20,35,14,30,26,33,42,93,12,57,11,54,50,75,90,41,88,96,40,81,24,94,18,39,70,34,21,55,5,29,71,83,1,60,74,69,10,62,43,73,97,65,15,16]
+lines = File.readlines("input.dat")
 
-lines = File.readlines("bingocards.txt")
-#puts lines
 
-# for i in 0..lines.length() do
+bingo = lines[0].split(',').map(&:to_i) 
 
-# end
 X_SIZE = 5
 Y_SIZE = 5
-
 
 class Card
     
@@ -70,9 +66,7 @@ class Card
 
 cards = Array.new
 
-(0..lines.length()).step(6) do |i|
-    #puts lines[i]
-#    numbers = lines[i].split(/ +/)
+(2..lines.length()).step(6) do |i|
     card = Card.new
     
     for y in 0..4 do

@@ -90,7 +90,7 @@ class Matrix
     end
 
 end
-lines = File.readlines("test_11.txt")
+lines = File.readlines("input.dat")
 
 ysize = lines.length()
 xsize = lines[0].length()-1

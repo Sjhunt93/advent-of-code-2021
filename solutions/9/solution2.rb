@@ -136,7 +136,7 @@ class Matrix
 
 
 end
-lines = File.readlines("geomap2.txt")
+lines = File.readlines("input.dat")
 
 ysize = lines.length()
 xsize = lines[0].length()-1

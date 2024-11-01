@@ -1,6 +1,5 @@
 
-lines = File.readlines("sub3.txt")
-#puts lines
+lines = File.readlines("input.dat")
 
 def find_raiting(lines, y_size, type)
     

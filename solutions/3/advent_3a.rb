@@ -1,11 +1,6 @@
-#file = File.open("sub2.txt")
-# File.foreach("sub2.txt") {
-#     |line| puts line
-#     
-#         puts "xx"
-# }
 
-lines = File.readlines("sub3.txt")
+
+lines = File.readlines("input.dat")
 #puts lines
 pos_x = 0
 depth = 0

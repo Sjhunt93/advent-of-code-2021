@@ -1,4 +1,4 @@
-lines = File.readlines("lines.txt")
+lines = File.readlines("input.dat")
 
 big_array = Array.new(1000*1000)
 big_array.each { |x| x=0 }
@@ -6,6 +6,7 @@ big_array.each { |x| x=0 }
 for i in 0..(1000*1000-1)
     big_array[i] = 0
 end
+
 for l in lines
     #a = /\d+/.match(l)
     a = l.split(/[ ,[->|\n]]/).reject { |c| c.empty? }
@@ -24,8 +25,6 @@ for l in lines
         print(xd, " ", yd, "\n")
         print(xstart, " ", ystart, "\n")
         if yd > 0
-            
-            
             for y in ystart..(ystart+yd)
                 index = xstart + (y * 1000)
                 big_array[index] += 1
@@ -37,10 +36,6 @@ for l in lines
                 big_array[index] += 1
             end
         end
-            
-
-        
-
     end
     
 end
